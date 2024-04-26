@@ -1,0 +1,105 @@
+https://ru.stackoverflow.com/questions/668845/%D0%BA%D0%B0%D0%BA-%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C-%D0%BD%D0%B5%D0%BF%D1%80%D0%B5%D1%80%D1%8B%D0%B2%D0%BD%D1%83%D1%8E-%D0%B1%D0%B5%D0%B3%D1%83%D1%89%D1%83%D1%8E-%D1%81%D1%82%D1%80%D0%BE%D0%BA%D1%83
+
+https://www.npmjs.com/package/jquery.marquee
+
+$(function() {
+  $('.marquee').marquee({
+    duration: 7000,
+    startVisible: true,
+    duplicated: true
+  });
+});
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+
+<div class='marquee' style='overflow:hidden'>jQuery plugin to scroll the text like the old traditional marquee. A 5.51 KB (minified) jQuery plugin to scroll the text like the old traditional marquee.</div>
+
+==================================================================
+
+Options:
+
+* allowCss3Support:
+Force the usage of jQuery's animate method even if the target browser supports CSS3 animations.
+Default: true
+
+* css3easing:
+Works when allowCss3Support is set to true.
+See here for full list.
+Default: 'linear'
+
+* easing:
+Requires the jQuery easing plugin.
+Default: 'linear'
+
+* delayBeforeStart:
+Time in milliseconds before the marquee starts animating.
+Default: 1000
+
+* direction:
+Direction towards which the marquee will animate 'left' / 'right' / 'up' / 'down'.
+Default: 'left'
+Todo: need to change this to ltr/rtl etc
+
+* duplicated:
+Should the marquee be duplicated to show an effect of continuous flow.
+Use this only when the text is shorter than the container.
+Default: false
+
+* duration:
+Duration in milliseconds in which you want your element to travel.
+Default: 5000.
+
+* speed:
+Speed will override duration.
+Speed allows you to set a relatively constant marquee speed regardless of the width of the containing element.
+Speed is measured in pixels per second.
+
+* gap:
+Gap in pixels between the tickers.
+Will work only when the duplicated option is set to true.
+Default: 20.
+Note: 20 means 20px so no need to use '20px' as the value.
+
+* pauseOnHover:
+Pause the marquee on hover.
+If the browser supports CSS3 and allowCss3Support is set to true this will be done using CSS3.
+Otherwise this will be done using the jQuery Pause plugin.
+Default: false.
+See demo page for example.
+
+* pauseOnCycle: On cycle, pause the marquee for delayBeforeStart milliseconds.
+
+* startVisible:
+The marquee will be visible from the start if set to true.
+Thanks to @nuke-ellington
+
+===============================================================================
+
+CSS:
+
+.marquee {
+  width: 300px; /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden;
+  border:1px solid #ccc;
+}
+
+===============================================================================
+
+/**
+ * Example of starting a plugin with options.
+ * I am just passing some of the options in the following example.
+ * you can also start the plugin using $('.marquee').marquee(); with defaults
+*/
+$('.marquee').marquee({
+	//duration in milliseconds of the marquee
+	duration: 15000,
+	//gap in pixels between the tickers
+	gap: 50,
+	//time in milliseconds before the marquee will start animating
+	delayBeforeStart: 0,
+	//'left' or 'right'
+	direction: 'left',
+	//true or false - should the marquee be duplicated to show an effect of continues flow
+	duplicated: true
+});
