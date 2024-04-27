@@ -1778,7 +1778,7 @@ input[type=submit] {
   cursor: pointer;
   height: 24px;
   position: absolute;
-  right: 13px;
+  right: 48px;
   top: 50%;
   transform: translateY(-50%);
   width: 24px;
@@ -1815,7 +1815,35 @@ input[type=submit] {
 }
 
 .header .menu__list > li {
+  display: table;
   position: relative;
+  width: auto;
+}
+
+.header .menu__list > li::after {
+  left: 0 !important;
+  width: 100% !important;
+}
+
+.header .menu li.fatty {
+  font-weight: 600;
+}
+
+.header .menu li::after {
+  background-color: transparent;
+  bottom: 3px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 21px;
+  position: absolute;
+  transition: 0.3s ease 0s;
+  width: calc(100% - 42px);
+}
+
+.header .menu li.current-menu-item:after,
+.header .menu li.current_page_item:after {
+  background-color: #000;
 }
 
 .header .menu-item {
@@ -1862,6 +1890,10 @@ input[type=submit] {
   font-weight: 600;
   line-height: 29.26px;
   pointer-events: none;
+}
+
+.header .menu__list > li.menu-item-has-children.big-submenu li::after {
+  bottom: 7px;
 }
 
 /* ------------------- */
@@ -2338,10 +2370,9 @@ body._touch .header .menu__list > li._active .menu__arrow {
 }
 
 .popular-goods__blockBottom {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .popular-goods__blockIcons {
@@ -3269,7 +3300,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header .menu__list li.current-menu-item,
   .header .menu__list li.current_page_item {
     color: #000;
-    font-weight: 600;
   }
 
   .header .menu__list li a {
@@ -3286,6 +3316,25 @@ body._touch .header .menu__list > li._active .menu__arrow {
     padding-bottom: 8px;
     padding-top: 8px;
     text-transform: uppercase;
+    /*
+    &::after {
+       background-color: transparent;
+       bottom: 5px;
+       content: '';
+       display: block;
+       height: 1px;
+       position: absolute;
+       transition: 0.3s ease 0s;
+       width: 100%;
+    }
+
+    &:hover {
+
+       &:after {
+          background-color: $currentColorMenu;
+       }
+    }
+    */
   }
 
   .header .menu__list > li:first-child {
@@ -3294,21 +3343,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .header .menu__list > li:last-child {
     margin-right: 0;
-  }
-
-  .header .menu__list > li::after {
-    background-color: transparent;
-    bottom: 5px;
-    content: "";
-    display: block;
-    height: 1px;
-    position: absolute;
-    transition: 0.3s ease 0s;
-    width: 100%;
-  }
-
-  .header .menu__list > li:hover:after {
-    background-color: #000;
   }
 
   .header .menu__list > li.menu-item-has-children::after {
@@ -3323,32 +3357,43 @@ body._touch .header .menu__list > li._active .menu__arrow {
     box-sizing: content-box;
     left: 35px;
     right: 50px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: calc(100vh - 240px);
-    padding: 21px 10.4% 35px;
+    padding: 21px 11.8% 35px;
     display: flex;
-    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    overflow: hidden;
   }
 
-  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list::-webkit-scrollbar {
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column:nth-child(1) {
+    width: calc(44% - 30px);
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column:nth-child(2) {
+    width: calc(42.5% - 30px);
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column:nth-child(3) {
+    width: calc(22.5% - 30px);
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column ul {
+    max-height: calc(100vh - 240px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column ul::-webkit-scrollbar {
     background-color: #eef0f3;
     padding: 5px;
-    width: 8px;
+    width: 4px;
   }
 
-  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list::-webkit-scrollbar-thumb {
+  .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list .column ul::-webkit-scrollbar-thumb {
     background-color: #d4d5d8;
   }
 
   .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list li {
     display: table;
-    margin-bottom: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-    width: calc(33.3333% - 30px);
   }
 
   .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list li:hover {
@@ -3597,8 +3642,37 @@ body._touch .header .menu__list > li._active .menu__arrow {
     margin-right: 50px;
   }
 
+  .header .menu li::after {
+    display: none;
+  }
+
+  .header .menu li a::after {
+    background-color: transparent;
+    bottom: -3px;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    transition: 0.3s ease 0s;
+    width: 100%;
+  }
+
+  .header .menu li.current-menu-item a:after,
+  .header .menu li.current_page_item a:after {
+    background-color: #000;
+  }
+
   .header .menu-item.home-page svg {
     display: none;
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu li::after {
+    bottom: -5px !important;
+  }
+
+  .header .menu__list > li.menu-item-has-children.big-submenu li a::after {
+    bottom: -5px;
   }
 
   body._touch .header .menu__list > li._active .menu__sub-list {
@@ -3787,11 +3861,16 @@ body._touch .header .menu__list > li._active .menu__arrow {
     color: inherit;
   }
 
+  .header .menu__list > li.menu-item-has-children.big-submenu .column:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
   .header .menu__list li {
     color: #000;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: -0.4px;
+    text-transform: uppercase;
     width: 100%;
   }
 
@@ -3829,6 +3908,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header .menu__list > li {
     margin-left: 0;
     margin-right: 0;
+    width: 100% !important;
   }
 }
 
@@ -3843,6 +3923,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .header .menu__icon::before,
   .header .menu__icon::after {
     background-color: #fff;
+  }
+
+  .header .menu__list > li:not(:last-child) {
+    margin-bottom: 12px;
   }
 }
 
@@ -4191,7 +4275,7 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .select__icon {
     height: 1px;
-    top: 11px;
+    top: 9px;
     width: 14px;
   }
 
@@ -4221,6 +4305,14 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .n_sec-title {
     font-size: 30px;
     line-height: 40px;
+  }
+
+  .header__serchForm input {
+    padding-left: 12px;
+  }
+
+  .header__serchForm button {
+    right: 25px;
   }
 
   .header .menu__list > li.menu-item-has-children.big-submenu li.title-menu-item a {
