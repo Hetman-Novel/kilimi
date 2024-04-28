@@ -4,8 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240428000044">
-   <link rel="stylesheet" href="files/swiper/swiper-bundle.min.css?_v=20240428000044">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240428153627">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240428153627">
+   <link rel="stylesheet" href="files/swiper/swiper-bundle.min.css?_v=20240428153627">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>KILIMI - інтернет магазин килимів</title>
 </head>
@@ -67,7 +68,9 @@
                <nav class="menu-topmenu-container">
                   <ul class="menu__list">
                      <li class="menu-item menu-item-has-children big-submenu">
-                        <a href="#">Ковролін</a>
+                        <a href="#">
+                           <span>КИЛИМИ</span>
+                        </a>
                         <!--<span class="menu__arrow">
                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
@@ -80,139 +83,463 @@
                                     <a href="#">Категорії</a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">АКРИЛОВІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>АКРИЛОВІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ДИТЯЧІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>ДИТЯЧІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ВИСОКОВОРСНІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item current-menu-item current_page_item">
-                                    <a href="#">СИНТЕТИЧНІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>СИНТЕТИЧНІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ З ВІСКОЗИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ З ВІСКОЗИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ З ВОВНИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ З ВОВНИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ ДЛЯ ВАННОЇ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ ДЛЯ ВАННОЇ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ШКІРИ</a>
+                                    <a href="#">
+                                       <span>ШКІРИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ РУЧНОЇ РОБОТИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ РУЧНОЇ РОБОТИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">БЕЗВОРСОВІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ГОБЕЛЕНИ</a>
+                                    <a href="#">
+                                       <span>ГОБЕЛЕНИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">АКСЕСУАРИ ДЛЯ КИЛИМІВ</a>
+                                    <a href="#">
+                                       <span>АКСЕСУАРИ ДЛЯ КИЛИМІВ</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                            <div class="column">
                               <ul>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Стиль</a>
+                                    <a href="#">
+                                       <span>Стиль</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">СХІДНА КЛАСИКА</a>
+                                    <a href="#">
+                                       <span>СХІДНА КЛАСИКА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЄВРОПЕЙСЬКА КЛАСИКА</a>
+                                    <a href="#">
+                                       <span>ЄВРОПЕЙСЬКА КЛАСИКА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">СУЧАСНІ</a>
+                                    <a href="#">
+                                       <span>СУЧАСНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ВІНТАЖНІ</a>
+                                    <a href="#">
+                                       <span>ВІНТАЖНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЕТНІЧНІ</a>
+                                    <a href="#">
+                                       <span>ЕТНІЧНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ОДНОТОННІ</a>
+                                    <a href="#">
+                                       <span>ОДНОТОННІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">форма</a>
+                                    <a href="#">
+                                       <span>форма</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ПРЯМОКУТНА</a>
+                                    <a href="#">
+                                       <span>ПРЯМОКУТНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ОВАЛЬНА</a>
+                                    <a href="#">
+                                       <span>ОВАЛЬНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КРУГЛА</a>
+                                    <a href="#">
+                                       <span>КРУГЛА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КВАДРАТНА</a>
+                                    <a href="#">
+                                       <span>КВАДРАТНА</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                            <div class="column">
                               <ul>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Розмір</a>
+                                    <a href="#">
+                                       <span>Розмір</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">0.80X1.50</a>
+                                    <a href="#">
+                                       <span>0.80X1.50</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.20X1.70</a>
+                                    <a href="#">
+                                       <span>1.20X1.70</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.40X2.00</a>
+                                    <a href="#">
+                                       <span>1.40X2.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.60X2.30</a>
+                                    <a href="#">
+                                       <span>1.60X2.30</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">2.00X3.00</a>
+                                    <a href="#">
+                                       <span>2.00X3.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">2.50X3.50</a>
+                                    <a href="#">
+                                       <span>2.50X3.50</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">3.00X4.00</a>
+                                    <a href="#">
+                                       <span>3.00X4.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Виробник</a>
+                                    <a href="#">
+                                       <span>Виробник</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">БЕЛЬГІЯ</a>
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ТУРЕЧЧИНА</a>
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЄГИПЕТ</a>
+                                    <a href="#">
+                                       <span>ЄГИПЕТ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">МОЛДОВА</a>
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">УКРАЇНА</a>
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                         </div>
                      </li>
-                     <li class="menu-item current-menu-item current_page_item">
-                        <a href="#">Килимова доріжка</a>
+                     <li class="menu-item menu-item-has-children big-submenu">
+                        <a href="#">
+                           <span>КОВРОЛІН</span>
+                        </a>
+                        <!--<span class="menu__arrow">
+                           <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
+                           </svg>
+                        </span>-->
+                        <div class="menu__sub-list">
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Категорії</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВЕ ПОКРИТТЯ УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КОВРОЛІН ДЛЯ ДОМУ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КОВРОЛІН ДЛЯ ОФІСУ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДИТЯЧИЙ КОВРОЛІН</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ШТУЧНА ТРАВА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Ширина</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>3.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>4.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>5.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Стиль</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДЛЯ ОФІСУ</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Виробник</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item menu-item-has-children big-submenu">
+                        <a href="#">
+                           <span>Килимова доріжка</span>
+                        </a>
+                        <!--<span class="menu__arrow">
+                           <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
+                           </svg>
+                        </span>-->
+                        <div class="menu__sub-list">
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Категорії</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА НА ВІДРІЗ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА ОДНОТОННА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Ширина</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>0.80 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.20 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.50 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Стиль</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДИТЯЧИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>СУЧАСНИЙ</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Виробник</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ПОЛЬЩА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УЗБЕКИСТАН</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
                      </li>
                      <li class="menu-item fatty">
-                        <a href="#">знижки</a>
+                        <a href="#">
+                           <span>знижки</span>
+                        </a>
                      </li>
                      <li class="menu-item menu-item-has-children">
-                        <a href="#">Pages</a>
+                        <a href="#">
+                           <span>Pages</span>
+                        </a>
                         <!--<span class="menu__arrow">
                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
@@ -945,12 +1272,12 @@
 </footer>
    </div>
 
-   <script src="js/script.min.js?_v=20240428000044"></script>
+   <script src="js/script.min.js?_v=20240428153627"></script>
 
-   <script src="files/swiper/swiper-bundle.min.js?_v=20240428000044"></script>
-   <script src="files/swiper/init.js?_v=20240428000044"></script>
+   <script src="files/swiper/swiper-bundle.min.js?_v=20240428153627"></script>
+   <script src="files/swiper/init.js?_v=20240428153627"></script>
 
-   <!--<script src="files/js/jquery-3.7.1.min.js?_v=20240428000044"></script>-->
+   <!--<script src="files/js/jquery-3.7.1.min.js?_v=20240428153627"></script>-->
 
 </body>
 </html>

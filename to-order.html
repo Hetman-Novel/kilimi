@@ -4,8 +4,9 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.min.css?_v=20240428000044">
-   <link rel="stylesheet" href="files/swiper/swiper-bundle.min.css?_v=20240428000044">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20240428153627">
+   <link rel="stylesheet" href="css/style.min.css?_v=20240428153627">
+   <link rel="stylesheet" href="files/swiper/swiper-bundle.min.css?_v=20240428153627">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
    <title>KILIMI - Оформити замовлення</title>
 </head>
@@ -67,7 +68,9 @@
                <nav class="menu-topmenu-container">
                   <ul class="menu__list">
                      <li class="menu-item menu-item-has-children big-submenu">
-                        <a href="#">Ковролін</a>
+                        <a href="#">
+                           <span>КИЛИМИ</span>
+                        </a>
                         <!--<span class="menu__arrow">
                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
@@ -80,139 +83,463 @@
                                     <a href="#">Категорії</a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">АКРИЛОВІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>АКРИЛОВІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ДИТЯЧІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>ДИТЯЧІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ВИСОКОВОРСНІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item current-menu-item current_page_item">
-                                    <a href="#">СИНТЕТИЧНІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>СИНТЕТИЧНІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ З ВІСКОЗИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ З ВІСКОЗИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ З ВОВНИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ З ВОВНИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ ДЛЯ ВАННОЇ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ ДЛЯ ВАННОЇ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ШКІРИ</a>
+                                    <a href="#">
+                                       <span>ШКІРИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КИЛИМИ РУЧНОЇ РОБОТИ</a>
+                                    <a href="#">
+                                       <span>КИЛИМИ РУЧНОЇ РОБОТИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">БЕЗВОРСОВІ КИЛИМИ</a>
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВІ КИЛИМИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ГОБЕЛЕНИ</a>
+                                    <a href="#">
+                                       <span>ГОБЕЛЕНИ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">АКСЕСУАРИ ДЛЯ КИЛИМІВ</a>
+                                    <a href="#">
+                                       <span>АКСЕСУАРИ ДЛЯ КИЛИМІВ</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                            <div class="column">
                               <ul>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Стиль</a>
+                                    <a href="#">
+                                       <span>Стиль</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">СХІДНА КЛАСИКА</a>
+                                    <a href="#">
+                                       <span>СХІДНА КЛАСИКА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЄВРОПЕЙСЬКА КЛАСИКА</a>
+                                    <a href="#">
+                                       <span>ЄВРОПЕЙСЬКА КЛАСИКА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">СУЧАСНІ</a>
+                                    <a href="#">
+                                       <span>СУЧАСНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ВІНТАЖНІ</a>
+                                    <a href="#">
+                                       <span>ВІНТАЖНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЕТНІЧНІ</a>
+                                    <a href="#">
+                                       <span>ЕТНІЧНІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ОДНОТОННІ</a>
+                                    <a href="#">
+                                       <span>ОДНОТОННІ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">форма</a>
+                                    <a href="#">
+                                       <span>форма</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ПРЯМОКУТНА</a>
+                                    <a href="#">
+                                       <span>ПРЯМОКУТНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ОВАЛЬНА</a>
+                                    <a href="#">
+                                       <span>ОВАЛЬНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КРУГЛА</a>
+                                    <a href="#">
+                                       <span>КРУГЛА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">КВАДРАТНА</a>
+                                    <a href="#">
+                                       <span>КВАДРАТНА</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                            <div class="column">
                               <ul>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Розмір</a>
+                                    <a href="#">
+                                       <span>Розмір</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">0.80X1.50</a>
+                                    <a href="#">
+                                       <span>0.80X1.50</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.20X1.70</a>
+                                    <a href="#">
+                                       <span>1.20X1.70</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.40X2.00</a>
+                                    <a href="#">
+                                       <span>1.40X2.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">1.60X2.30</a>
+                                    <a href="#">
+                                       <span>1.60X2.30</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">2.00X3.00</a>
+                                    <a href="#">
+                                       <span>2.00X3.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">2.50X3.50</a>
+                                    <a href="#">
+                                       <span>2.50X3.50</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">3.00X4.00</a>
+                                    <a href="#">
+                                       <span>3.00X4.00</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item title-menu-item">
-                                    <a href="#">Виробник</a>
+                                    <a href="#">
+                                       <span>Виробник</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">БЕЛЬГІЯ</a>
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ТУРЕЧЧИНА</a>
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">ЄГИПЕТ</a>
+                                    <a href="#">
+                                       <span>ЄГИПЕТ</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">МОЛДОВА</a>
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
                                  </li>
                                  <li class="menu-item">
-                                    <a href="#">УКРАЇНА</a>
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
                                  </li>
                               </ul>
                            </div>
                         </div>
                      </li>
-                     <li class="menu-item current-menu-item current_page_item">
-                        <a href="#">Килимова доріжка</a>
+                     <li class="menu-item menu-item-has-children big-submenu">
+                        <a href="#">
+                           <span>КОВРОЛІН</span>
+                        </a>
+                        <!--<span class="menu__arrow">
+                           <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
+                           </svg>
+                        </span>-->
+                        <div class="menu__sub-list">
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Категорії</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВЕ ПОКРИТТЯ УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КОВРОЛІН ДЛЯ ДОМУ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КОВРОЛІН ДЛЯ ОФІСУ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДИТЯЧИЙ КОВРОЛІН</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ШТУЧНА ТРАВА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Ширина</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>3.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>4.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>5.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Стиль</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДЛЯ ОФІСУ</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Виробник</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="menu-item menu-item-has-children big-submenu">
+                        <a href="#">
+                           <span>Килимова доріжка</span>
+                        </a>
+                        <!--<span class="menu__arrow">
+                           <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
+                           </svg>
+                        </span>-->
+                        <div class="menu__sub-list">
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Категорії</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА НА ВІДРІЗ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>КИЛИМОВА ДОРІЖКА ОДНОТОННА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Ширина</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>0.80 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>1.20 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.00 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>2.50 M</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Стиль</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЗВОРСОВИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ВИСОКОВОРСНИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ДИТЯЧИЙ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>СУЧАСНИЙ</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <div class="column">
+                              <ul>
+                                 <li class="menu-item title-menu-item">
+                                    <a href="#">Виробник</a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>БЕЛЬГІЯ</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>МОЛДОВА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ПОЛЬЩА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>ТУРЕЧЧИНА</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УЗБЕКИСТАН</span>
+                                    </a>
+                                 </li>
+                                 <li class="menu-item">
+                                    <a href="#">
+                                       <span>УКРАЇНА</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
                      </li>
                      <li class="menu-item fatty">
-                        <a href="#">знижки</a>
+                        <a href="#">
+                           <span>знижки</span>
+                        </a>
                      </li>
                      <li class="menu-item menu-item-has-children">
-                        <a href="#">Pages</a>
+                        <a href="#">
+                           <span>Pages</span>
+                        </a>
                         <!--<span class="menu__arrow">
                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M1.00195 0.749512L5.50195 5.24951L10.002 0.749512" stroke="#332F2C" stroke-width="2"/>
@@ -282,172 +609,221 @@
                   <p class="calls-are-free__textUnderPhone">Дзвінки безкоштовні</p>
                </div>
             </div>
-            <h1 class="page__title">Оформити замовлення</h1>
-            <div class="to-order">
-               <div class="to-order__digital-stages stage-one-active">
-                  <div class="to-order__digital-stage">
-                     <button id="stage-1">1</button>
-                     <p>Ваші данні</p>
+            <div class="to-order__before">
+               <h1 class="page__title">Оформити замовлення</h1>
+               <div class="to-order">
+                  <div class="to-order__digital-stages stage-one-active">
+                     <div class="to-order__digital-stage">
+                        <button id="stage-1">1</button>
+                        <p>Ваші данні</p>
+                     </div>
+                     <div class="to-order__digital-stage">
+                        <button id="stage-2">2</button>
+                        <p>Доставка</p>
+                     </div>
+                     <div class="to-order__digital-stage">
+                        <button id="stage-3">3</button>
+                        <p>Оплата</p>
+                     </div>
                   </div>
-                  <div class="to-order__digital-stage">
-                     <button id="stage-2">2</button>
-                     <p>Доставка</p>
+               </div>
+               <form id="sending-to-order-form" class="to-order__form">
+                  <div class="to-order__blockStages">
+                     <div class="to-order__items">
+                        <div class="to-order__item">
+                           <div id="block-stage-one" class="to-order__blockStage show-stage">
+                              <div class="to-order__tabs">
+                                 <button id="tab-1-stage-1" class="to-order__tab tab-active" type="button">Я новий покупець</button>
+                                 <button id="tab-2-stage-1" class="to-order__tab" type="button">Я постійний клієнт</button>
+                              </div>
+                              <div class="to-order__tabContent tab-content-active" id="stage-1-tab-content-1">
+                                 <div class="form__wrapFields">
+                                    <input type="text" class="form__field" placeholder="Прізвище">
+                                    <input type="text" class="form__field" placeholder="Ім’я">
+                                    <input type="number" class="form__field" placeholder="Ваш телефон">
+                                    <input type="email" class="form__field" placeholder="E-mail">
+                                 </div>
+                                 <div class="form__BlockPromotionalCode">
+                                    <p>Є промокод? введіть його тут</p>
+                                    <div class="wrap-field">
+                                       <input type="text">
+                                       <button type="button">Застосувати</button>
+                                    </div>
+                                 </div>
+                                 <div class="form__wrapButtonNext">
+                                    <button id="to-stage-two" type="button" class="js-scroll-top">Продовжити</button>
+                                    <label class="custom-checkbox">
+                                       <input type="checkbox" class="custom-checkbox__input">
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Створити акаунт</span>
+                                    </label>
+                                 </div>
+                              </div>
+                              <div class="to-order__tabContent" id="stage-1-tab-content-2">
+                                 <div class="form__wrapFields">
+                                    <p class="to-order__tabContentTextAboveFields">Якщо ви зареєстрований клієнт, введіть ваш логін/email та пароль, якщо ви ще не є нашим клієнтом, то перейдіть у розділ "Новий покупець" і заповніть поля потрібною інформацією.</p>
+                                    <input type="email" class="form__field" placeholder="E-mail">
+                                    <input type="password" class="form__field" placeholder="Пароль">
+                                 </div>
+                                 <div class="form__wrapButton">
+                                    <a href="#" class="button">Увійти</a>
+                                    <a href="#">Забули пароль?</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div id="block-stage-two" class="to-order__blockStage">
+                              <div class="to-order__tabs">
+                                 <button id="tab-1-stage-2" class="to-order__tab tab-active" type="button">По Україні</button>
+                                 <button id="tab-2-stage-2" class="to-order__tab" type="button">По Києву</button>
+                              </div>
+                              <div class="form__wrapFields">
+                                 <div class="form__wrap-checkboxs">
+                                    <p>Тип доставки:</p>
+                                    <div class="form__checkboxs">
+                                       <label id="delivery-department" class="custom-checkbox">
+                                          <input type="radio" name="delivery-type" class="custom-checkbox__input" value="Відділення (Нова Пошта)" checked>
+                                          <span class="custom-checkbox__box"></span>
+                                          <span class="custom-checkbox__text">Відділення <span>(Нова Пошта)</span></span>
+                                       </label>
+                                       <label id="delivery-by-courier" class="custom-checkbox">
+                                          <input type="radio" name="delivery-type" class="custom-checkbox__input" value="Кур’єром (Нова Пошта)">
+                                          <span class="custom-checkbox__box"></span>
+                                          <span class="custom-checkbox__text">Кур’єром <span>(Нова Пошта)</span></span>
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="to-order__tabContent tab-content-active" id="stage-2-tab-content-1">
+                                 <div id="wrap-selects" class="form__wrapFields wrapSelects">
+                                    <select class="select2 select-region" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Київська область">Київська область</option>
+                                       <option value="Херсонська область">Херсонська область</option>
+                                       <option value="Житомирська область">Житомирська область</option>
+                                       <option value="Харківська область">Харківська область</option>
+                                       <option value="Одеська область">Одеська область</option>
+                                       <option value="Дніпропетровська область">Дніпропетровська область</option>
+                                       <option value="Миколаївська область">Миколаївська область</option>
+                                    </select>
+                                    <select class="select2 select-sity" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Вільнянськ">Вільнянськ</option>
+                                       <option value="Ворожба">Ворожба</option>
+                                       <option value="Житомир">Житомир</option>
+                                       <option value="Золотоноша">Золотоноша</option>
+                                       <option value="Ізмаїл">Ізмаїл</option>
+                                       <option value="Кадіївка">Кадіївка</option>
+                                       <option value="Кам'янське">Кам'янське</option>
+                                       <option value="Радехів">Радехів</option>
+                                    </select>
+                                    <select class="select2 form__field select-novaya-poshota select-nova-poshta-branch" tabindex="-1" style="width: 100%;">
+                                       <option value=""></option>
+                                       <option value="Одеса, вул. Дальницька, 23/4">Одеса, вул. Дальницька, 23/4</option>
+                                       <option value="Вінниця, вул. Гладкова, 3">Вінниця, вул. Гладкова, 3</option>
+                                       <option value="Відд 6, Полтава, вул. Івана Мазепи, 12/8">Відд 6, Полтава, вул. Івана Мазепи, 12/8</option>
+                                       <option value="Відд 7, Миколаїв, вул. Космонавтів, 60/4">Відд 7, Миколаїв, вул. Космонавтів, 60/4</option>
+                                       <option value="Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24">Відд 8, Кривий Ріг, просп. 200-річчя Кривого Рогу, 24</option>
+                                       <option value="Відд 9, Запоріжжя, просп. Металургів, 19">Відд 9, Запоріжжя, просп. Металургів, 19</option>
+                                       <option value="Відд 12, Харків, вул. Бучми, 1">Відд 12, Харків, вул. Бучми, 1</option>
+                                       <option value="Відд 18, Київ, просп. Повітрофлотський, 66">Відд 18, Київ, просп. Повітрофлотський, 66</option>
+                                    </select>
+                                    <input type="text" class="form__field address-field hidden" placeholder="Адреса доставки">
+                                    <p class="form__textUnderSelects">*Товар доставляється тільки на вантажні відділення або за адресою через його габарити *</p>
+                                 </div>
+                              </div>
+                              <div class="to-order__tabContent" id="stage-2-tab-content-2">
+                                 <div class="form__wrapFields">
+                                    <input type="text" class="form__field address-field" placeholder="Адреса доставки">
+                                 </div>
+                              </div>
+                              <button type="button" id="to-stage-three" class="form__paymentMethod js-scroll-top">Вибрати спосіб оплати</button>
+                           </div>
+                           <div id="block-stage-three" class="to-order__blockStage">
+                              <div class="form__wrapFields state-three">
+                                 <div class="form__checkboxs">
+                                    <label class="custom-checkbox">
+                                       <input type="radio" name="payment" class="custom-checkbox__input" value="Оплата карткою" checked>
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Оплата  карткою <span>(ApplePay, GoooglePay)</span></span>
+                                    </label>
+                                    <label class="custom-checkbox">
+                                       <input type="radio" name="payment" class="custom-checkbox__input" value="Оплата при отриманні">
+                                       <span class="custom-checkbox__box"></span>
+                                       <span class="custom-checkbox__text">Кур’єром <span>Оплата при отриманні</span></span>
+                                    </label>
+                                 </div>
+                                 <p>*Комісія за повернення коштів згідно тарифів Нової Пошти*</p>
+                                 <textarea class="form__field" placeholder="Додати примітку"></textarea>
+                              </div>
+                              <button type="submit" class="form__paymentMethod js-scroll-top">Оформити замовлення</button>
+                           </div>
+                        </div>
+                        <div class="to-order__item">
+                           <div class="to-order__blockProduct">
+                              <button type="button" class="to-order__blockProductRemove"><img src="images/svg/product-remove.svg" alt=""></button>
+                              <div class="to-order__blockProductImage wrap-lazy-load-image">
+                                 <img src="images/to-order-image.jpg" alt="">
+                              </div>
+                              <div class="to-order__blockProductInfo">
+                                 <h3>Taboo g980b grey </h3>
+                                 <table>
+                                    <tbody>
+                                       <tr>
+                                          <th scope="row">Розмір</th>
+                                          <th scope="row">0.80x1.50</th>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Модель</th>
+                                          <th scope="row">007654</th>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Кількість</th>
+                                          <th scope="row">
+                                             <div class="wrap-number-plus-minus">
+                                                <img class="number__minus" src="images/svg/btn-minus.svg" alt="">
+                                                <input class="number__input" type="text" value="2">
+                                                <img class="number__plus" src="images/svg/btn-plus.svg" alt="">
+                                             </div>
+                                          </th>
+                                       </tr>
+                                       <tr>
+                                          <th scope="row">Ціна</th>
+                                          <th scope="row">3600 грн</th>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <div class="to-order__blockPrice">
+                              <p>Сума замовлення : <span>3600 грн</span></p>
+                              <a href="#">Оформити через <span>mono checkout</span></a>
+                           </div>
+                        </div>
+                     </div>
                   </div>
-                  <div class="to-order__digital-stage">
-                     <button id="stage-3">3</button>
-                     <p>Оплата</p>
+               </form>
+            </div>
+            <div class="to-order__after hidden">
+               <img src="images/svg/to-order-after-column-icon.svg" alt="">
+               <h2>Дякуємо за замовлення</h2>
+               <p>Наші менеджери зв’яжуться з вами за вказаним номером телефону найближчим часом</p>
+               <div class="to-order__afterColumns">
+                  <div class="to-order__afterColumn">
+                     <img src="images/svg/to-order-after-column-icon.svg" alt="">
+                     <div class="to-order__afterColumnInfo">
+                        <h4>Номер вашого замовлення</h4>
+                        <p>0830/ 93203 -93</p>
+                     </div>
+                  </div>
+                  <div class="to-order__afterColumn">
+                     <img src="images/svg/to-order-after-column-icon.svg" alt="">
+                     <div class="to-order__afterColumnInfo">
+                        <h4>Cума замовлення</h4>
+                        <p>3600 грн</p>
+                     </div>
                   </div>
                </div>
             </div>
-            <form class="to-order__form">
-               <div class="to-order__blockStages">
-                  <div class="to-order__items">
-                     <div class="to-order__item">
-                        <div id="block-stage-one" class="to-order__blockStage show-stage">
-                           <div class="to-order__tabs">
-                              <button id="tab-1-stage-1" class="to-order__tab tab-active" type="button">Я новий покупець</button>
-                              <button id="tab-2-stage-1" class="to-order__tab" type="button">Я постійний клієнт</button>
-                           </div>
-                           <div class="to-order__tabContent tab-content-active" id="stage-1-tab-content-1">
-                              <div class="form__wrapFields">
-                                 <input type="text" class="form__field" placeholder="Прізвище">
-                                 <input type="text" class="form__field" placeholder="Ім’я">
-                                 <input type="number" class="form__field" placeholder="Ваш телефон">
-                                 <input type="email" class="form__field" placeholder="E-mail">
-                              </div>
-                              <div class="form__BlockPromotionalCode">
-                                 <p>Є промокод? введіть його тут</p>
-                                 <div class="wrap-field">
-                                    <input type="text">
-                                    <button type="button">Застосувати</button>
-                                 </div>
-                              </div>
-                              <div class="form__wrapButtonNext">
-                                 <button id="to-stage-two" type="button">Продовжити</button>
-                                 <label class="custom-checkbox">
-                                    <input type="checkbox" class="custom-checkbox__input">
-                                    <span class="custom-checkbox__box"></span>
-                                    <span class="custom-checkbox__text">Створити акаунт</span>
-                                 </label>
-                              </div>
-                           </div>
-                           <div class="to-order__tabContent" id="stage-1-tab-content-2">
-                              <div class="form__wrapFields">
-                                 <p class="to-order__tabContentTextAboveFields">Якщо ви зареєстрований клієнт, введіть ваш логін/email та пароль, якщо ви ще не є нашим клієнтом, то перейдіть у розділ "Новий покупець" і заповніть поля потрібною інформацією.</p>
-                                 <input type="email" class="form__field" placeholder="E-mail">
-                                 <input type="password" class="form__field" placeholder="Пароль">
-                              </div>
-                              <div class="form__wrapButton">
-                                 <a href="#" class="button">Увійти</a>
-                                 <a href="#">Забули пароль?</a>
-                              </div>
-                           </div>
-                        </div>
-                        <div id="block-stage-two" class="to-order__blockStage">
-                           <div class="to-order__tabs">
-                              <button id="tab-1-stage-2" class="to-order__tab tab-active" type="button">По Україні</button>
-                              <button id="tab-2-stage-2" class="to-order__tab" type="button">По Києву</button>
-                           </div>
-                           <div class="form__wrapFields">
-                              <div class="form__wrap-checkboxs">
-                                 <p>Тип доставки:</p>
-                                 <div class="form__checkboxs">
-                                    <label id="delivery-department" class="custom-checkbox">
-                                       <input type="radio" name="delivery-type" class="custom-checkbox__input" value="Відділення (Нова Пошта)" checked>
-                                       <span class="custom-checkbox__box"></span>
-                                       <span class="custom-checkbox__text">Відділення <span>(Нова Пошта)</span></span>
-                                    </label>
-                                    <label id="delivery-by-courier" class="custom-checkbox">
-                                       <input type="radio" name="delivery-type" class="custom-checkbox__input" value="Кур’єром (Нова Пошта)">
-                                       <span class="custom-checkbox__box"></span>
-                                       <span class="custom-checkbox__text">Кур’єром <span>(Нова Пошта)</span></span>
-                                    </label>
-                                 </div>
-                                 - select Виберіть вашу область
-                                 <br>
-                                 - select Виберіть ваше місто
-                                 <br>
-                                 <p id="select-novaya-poshota" class="form__field select-novaya-poshota">- select Виберіть відділення Нової П</p>
-                              </div>
-                           </div>
-                           <div class="to-order__tabContent tab-content-active" id="stage-2-tab-content-1">
-                              <div class="form__wrapFields">
-                                 
-                                 <input id="address-field" type="text" class="form__field address-field hidden" placeholder="Адреса доставки">
-                              </div>
-                              <p id="delivery-info" class="form__textUnderSelects">*Товар доставляється тільки на вантажні відділення або за адресою через його габарити *</p>
-                           </div>
-                           <div class="to-order__tabContent" id="stage-2-tab-content-2">
-                              <div class="form__wrapFields">
-                                 <input type="text" class="form__field address-field" placeholder="Адреса доставки">
-                              </div>
-                           </div>
-                           <button type="button" id="to-stage-three" class="form__paymentMethod">Вибрати спосіб оплати</button>
-                        </div>
-                        <div id="block-stage-three" class="to-order__blockStage">
-                           <div class="form__wrapFields state-three">
-                              <div class="form__checkboxs">
-                                 <label class="custom-checkbox">
-                                    <input type="radio" name="payment" class="custom-checkbox__input" value="Оплата карткою" checked>
-                                    <span class="custom-checkbox__box"></span>
-                                    <span class="custom-checkbox__text">Оплата  карткою <span>(ApplePay, GoooglePay)</span></span>
-                                 </label>
-                                 <label class="custom-checkbox">
-                                    <input type="radio" name="payment" class="custom-checkbox__input" value="Оплата при отриманні">
-                                    <span class="custom-checkbox__box"></span>
-                                    <span class="custom-checkbox__text">Кур’єром <span>Оплата при отриманні</span></span>
-                                 </label>
-                              </div>
-                              <p>*Комісія за повернення коштів згідно тарифів Нової Пошти*</p>
-                              <textarea class="form__field" placeholder="Додати примітку"></textarea>
-                           </div>
-                           <button type="submit" class="form__paymentMethod">Оформити замовлення</button>
-                        </div>
-                     </div>
-                     <div class="to-order__item">
-                        <div class="to-order__blockProduct">
-                           <button type="button" class="to-order__blockProductRemove"><img src="images/svg/product-remove.svg" alt=""></button>
-                           <div class="to-order__blockProductImage wrap-lazy-load-image">
-                              <img src="images/to-order-image.jpg" alt="">
-                           </div>
-                           <div class="to-order__blockProductInfo">
-                              <h3>Taboo g980b grey </h3>
-                              <table>
-                                 <tbody>
-                                    <tr>
-                                       <th scope="row">Розмір</th>
-                                       <th scope="row">0.80x1.50</th>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">Модель</th>
-                                       <th scope="row">007654</th>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">Кількість</th>
-                                       <th scope="row">
-                                          <div class="wrap-number-plus-minus">
-                                             <img class="number__minus" src="images/svg/btn-minus.svg" alt="">
-                                             <input class="number__input" type="text" value="2">
-                                             <img class="number__plus" src="images/svg/btn-plus.svg" alt="">
-                                          </div>
-                                       </th>
-                                    </tr>
-                                    <tr>
-                                       <th scope="row">Ціна</th>
-                                       <th scope="row">3600 грн</th>
-                                    </tr>
-                                 </tbody>
-                              </table>
-                           </div>
-                        </div>
-                        <div class="to-order__blockPrice">
-                           <p>Сума замовлення : <span>3600 грн</span></p>
-                           <a href="#">Оформити через <span>mono checkout</span></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </form>
          </div>
       </main>
       <footer class="footer">
@@ -555,12 +931,15 @@
 </footer>
    </div>
 
-   <script src="js/script.min.js?_v=20240428000044"></script>
+   <script src="js/script.min.js?_v=20240428153627"></script>
 
-   <script src="files/js/tabs-for-calls-are-free.js?_v=20240428000044"></script>
+   <script src="files/js/jquery-3.7.1.min.js?_v=20240428153627"></script>
+   <script src="files/js/form.js?_v=20240428153627"></script>
+   <script src="files/buttons-for-input-numbers/script.js?_v=20240428153627"></script>
 
-   <script src="files/js/jquery-3.7.1.min.js?_v=20240428000044"></script>
-   <script src="files/buttons-for-input-numbers/script.js?_v=20240428000044"></script>
+   <script src="files/select2/js/select2.full.min.js?_v=20240428153627"></script>
+   <script src="files/select2/js/select2.min.js?_v=20240428153627"></script>
+   <script src="files/select2/js/select2-init.js?_v=20240428153627"></script>
 
 </body>
 </html>
