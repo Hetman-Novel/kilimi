@@ -2898,11 +2898,15 @@ body._touch .header .menu__list > li._active .menu__arrow {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  height: 95px;
   margin-left: auto;
   overflow: hidden;
   padding: 1px;
-  width: 95px;
+  bottom: 15px;
+  height: 70px;
+  right: 35px;
+  position: fixed;
+  width: 70px;
+  z-index: 3;
 }
 
 .delivery-and-payment__telegram img {
@@ -4070,6 +4074,62 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (min-width: 1100px) {
+  .header.n_scroll .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list {
+    top: 40px;
+  }
+
+  body._touch .header .menu__list > li {
+    align-items: center;
+    display: flex;
+  }
+
+  body._touch .header .menu__list > li._active .menu__sub-list {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(0, 0);
+    visibility: visible;
+  }
+
+  .interesting-articles__items {
+    margin-left: -33px;
+    margin-right: -33px;
+  }
+
+  .interesting-articles__item {
+    margin-left: 33px;
+    margin-right: 33px;
+    width: calc(33.3333% - 66px);
+  }
+
+  .bargain-in-kilima__blockText {
+    width: calc(100% - 600px);
+  }
+
+  .delivery-and-payment__item:nth-child(even) {
+    width: calc(54% + 2px);
+  }
+
+  .delivery-and-payment__item:nth-child(odd) {
+    width: calc(46% - 2px);
+  }
+
+  .delivery-and-payment__item:nth-child(2) {
+    background-color: #000;
+    height: 1px;
+  }
+
+  .to-order__item:nth-child(1) {
+    width: calc(38% - 38px);
+  }
+
+  .to-order__item:nth-child(2) {
+    padding-left: 2%;
+    padding-top: 86px;
+    width: calc(62% - 22px);
+  }
+}
+
 @media (min-width: 1100px) {
   .header .menu__list > li a span,
   .header .menu__list > li.menu-item-has-children.big-submenu .menu__sub-list li a span {
@@ -4310,58 +4370,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 }
 
-@media screen and (min-width: 1100px) {
-  body._touch .header .menu__list > li {
-    align-items: center;
-    display: flex;
-  }
-
-  body._touch .header .menu__list > li._active .menu__sub-list {
-    opacity: 1;
-    pointer-events: all;
-    transform: translate(0, 0);
-    visibility: visible;
-  }
-
-  .interesting-articles__items {
-    margin-left: -33px;
-    margin-right: -33px;
-  }
-
-  .interesting-articles__item {
-    margin-left: 33px;
-    margin-right: 33px;
-    width: calc(33.3333% - 66px);
-  }
-
-  .bargain-in-kilima__blockText {
-    width: calc(100% - 600px);
-  }
-
-  .delivery-and-payment__item:nth-child(even) {
-    width: calc(54% + 2px);
-  }
-
-  .delivery-and-payment__item:nth-child(odd) {
-    width: calc(46% - 2px);
-  }
-
-  .delivery-and-payment__item:nth-child(2) {
-    background-color: #000;
-    height: 1px;
-  }
-
-  .to-order__item:nth-child(1) {
-    width: calc(38% - 38px);
-  }
-
-  .to-order__item:nth-child(2) {
-    padding-left: 2%;
-    padding-top: 86px;
-    width: calc(62% - 22px);
-  }
-}
-
 @media screen and (min-width: 1281px) {
   .bargain-in-kilima__blockText p:nth-child(1) {
     padding-right: 50px;
@@ -4385,6 +4393,13 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .form__checkboxs .custom-checkbox__text {
     white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 1361px) {
+  .delivery-and-payment__telegram {
+    right: 50%;
+    transform: translateX(640px);
   }
 }
 
@@ -4442,11 +4457,6 @@ body._touch .header .menu__list > li._active .menu__arrow {
 
   .slider__navigation .swiper-scrollbar {
     transform: translateY(-80px);
-  }
-
-  .delivery-and-payment__telegram {
-    height: 80px;
-    width: 80px;
   }
 
   .to-order__after {
@@ -4996,6 +5006,10 @@ body._touch .header .menu__list > li._active .menu__arrow {
   .popular-goods__blockImage {
     height: 260px;
     width: 180px;
+  }
+
+  .delivery-and-payment__telegram {
+    right: 20px;
   }
 
   .to-order__blockProduct {
@@ -5602,8 +5616,12 @@ body._touch .header .menu__list > li._active .menu__arrow {
   }
 
   .delivery-and-payment__telegram {
-    height: 60px;
-    width: 60px;
+    right: 15px;
+  }
+
+  .delivery-and-payment__telegram {
+    height: 40px;
+    width: 40px;
   }
 
   .to-order__after {
