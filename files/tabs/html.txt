@@ -1,0 +1,27 @@
+<div id="tabs">
+   <div class="tabs__wrap-tab">
+      <div data-tab="tab1" class="tab tab-active">Вкладка 1</div>
+      <div data-tab="tab2" class="tab">Вкладка 2</div>
+   </div>
+   <div data-tabcontent="tab1" class="tabContent content-active">
+      Содержимое вкладки 1
+   </div>
+      <div data-tabcontent="tab2" class="tabContent">
+         <div id="subTabs">
+         <div class="tabs__wrap-tab">
+            <div data-tab="subTab1" class="subTab subTab-active">
+               sub Вкладка 1
+            </div>
+            <div data-tab="subTab2" class="subTab">
+               sub Вкладка 2
+            </div>
+            <div data-tab="subTab3" class="subTab">
+               sub Вкладка 3
+            </div>
+         </div>
+         <div data-tabcontent="subTab1" class="subTabContent subContent-active">sub Содержимое вкладки 1</div>
+         <div data-tabcontent="subTab2" class="subTabContent">sub Содержимое вкладки 2</div>
+         <div data-tabcontent="subTab3" class="subTabContent">sub Содержимое вкладки 3</div>
+      </div>
+   </div>
+</div>
