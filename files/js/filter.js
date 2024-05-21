@@ -68,16 +68,22 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
          let customSelects = document.querySelectorAll('.custom-select');
          customSelects.forEach(function(customSelect) {
+            let timer;
+            
             customSelect.addEventListener('mouseover', function(event) {
-               if (!event.target.closest('.custom-select').classList.contains('is-active')) {
-                  event.target.closest('.custom-select').classList.add('is-active')
-               }
-            })
+               timer = setTimeout(function() {
+                     if (!customSelect.classList.contains('is-active')) {
+                        customSelect.classList.add('is-active');
+                     }
+               }, 300); // Задержка в 1 секунды
+            });
+
             customSelect.addEventListener('mouseout', function(event) {
+               clearTimeout(timer);
                if (!event.relatedTarget || !event.relatedTarget.closest('.custom-select')) {
-                  event.target.closest('.custom-select').classList.remove('is-active')
+                     customSelect.classList.remove('is-active');
                }
-            })
+            });
          });
       }
    }
