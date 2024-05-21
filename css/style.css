@@ -2048,7 +2048,7 @@ body._touch .header .menu__list > li._active .menu__sub-list {
   top: calc(100% - 0px);
 }
 
-body._pc .header .menu__list > li:hover .menu__sub-list {
+body._pc .header .menu__list > li.hover .menu__sub-list {
   opacity: 1;
   pointer-events: all;
   transform: perspective(400px) rotateX(0deg);
